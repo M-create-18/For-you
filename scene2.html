@@ -213,7 +213,36 @@ Your journey begins...
 
 <script>
 
+<script>
+
 function openDoor(door){
+
+door.style.transform="scale(2.3)";
+door.style.opacity="0";
+
+setTimeout(function(){
+
+document.querySelector(".container").style.display="none";
+
+document.getElementById("memoryScreen").style.display="flex";
+
+document.getElementById("memoryPhoto").src="images/door1.jpg";
+
+document.getElementById("memoryMessage").innerHTML="Your first memory goes here ❤️";
+
+},900);
+
+}
+
+function closeMemory(){
+
+document.getElementById("memoryScreen").style.display="none";
+
+document.querySelector(".container").style.display="flex";
+
+}
+
+</script>
 
 door.style.transform="scale(2.3)";
 door.style.opacity="0";
